@@ -3,7 +3,7 @@
 HOME_PATH=$PWD
 TARGET_PATH=$PWD"/build"
 OS_PATH=$TARGET_PATH"/wasabi"
-APP_NAME="saba"
+APP_NAME="book-practice-how-browsers-work"
 MAKEFILE_PATH=$HOME_PATH"/Makefile"
 
 # execute `mkdir build/` if it doesn't exist

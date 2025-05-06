@@ -94,7 +94,7 @@ impl Url {
       .collect();
 
     if url_parts.len() < 2 {
-      return "/".to_string();
+      return "".to_string();
     }
 
     let path_and_searchpart: Vec<&str> = url_parts[1].splitn(2, '?').collect();

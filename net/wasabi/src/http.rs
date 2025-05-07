@@ -5,6 +5,7 @@ use saba_core::http::HttpResponse;
 use alloc::format;
 use crate::alloc::string::ToString;
 use noli::net::lookup_host;
+use noli::net::SocketAddr;
 
 pub struct HttpClient {}
 
@@ -27,5 +28,7 @@ impl HttpClient {
         if ips.len() < 1 {
             return Err(Error::Network("Failed to find IP addresses".to_string()));
         }
+
+        let socket_addr: SocketAddr = (ips[0], port).into();
     }
 }
